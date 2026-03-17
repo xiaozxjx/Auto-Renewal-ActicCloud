@@ -47,12 +47,12 @@ def _0x3m4n():
         f"{_0x5e6f}{base64.b64decode('L2luZGV4L2xvZ2luLz9yZWZlcmVyPQ==').decode()}",
         data={"swapname": _0x3c4d['username'], "swappass": _0x3c4d['password']},
         headers={"Origin": _0x5e6f, "Referer": f"{_0x5e6f}{base64.b64decode('L2luZGV4L2xvZ2luLz9yZWZlcmVyPQ==').decode()}"},
-        timeout=10, allow_redirects=True
+        timeout=10, allow_redirects=True, verify=False
     )
     return "success=" in _0xc.url or any(x in _0xc.text for x in [base64.b64decode('55m75pmG5oiQ5Yqf').decode(), base64.b64decode('5qyi6L+O5Zue5p2l').decode(), base64.b64decode('5o6n5Yi26Z2i5p2/').decode()])
 
 def _0x5o6p(_0xd):
-    _0xe = _0x7g8h.get(f"{_0x5e6f}{base64.b64decode('L2NvbnRyb2wvZGV0YWlsLw==').decode()}{_0xd}/", timeout=10)
+    _0xe = _0x7g8h.get(f"{_0x5e6f}{base64.b64decode('L2NvbnRyb2wvZGV0YWlsLw==').decode()}{_0xd}/", timeout=10, verify=False)
     _0xf = re.search(base64.b64decode('5Yiw5pyf5pe26Ze0PC90aD5ccyo8dGQ+XHMqKFswLTldezR9LVswLTldezJ9LVswLTldezJ9KVxzKjwvdGQ+').decode(), _0xe.text)
     if not _0xf:
         raise RuntimeError("无法解析到期时间")
@@ -63,7 +63,7 @@ def _0x7q8r(_0xd):
     _0x11 = _0x7g8h.post(
         f"{_0x5e6f}{base64.b64decode('L2NvbnRyb2wvZGV0YWlsLw==').decode()}{_0xd}{base64.b64decode('L3BheS8=').decode()}", data={},
         headers={"Origin": _0x5e6f, "Referer": f"{_0x5e6f}{base64.b64decode('L2NvbnRyb2wvZGV0YWlsLw==').decode()}{_0xd}/"},
-        timeout=10, allow_redirects=True
+        timeout=10, allow_redirects=True, verify=False
     )
     _0x12 = _0x5o6p(_0xd)
     _0x13 = "success=" in _0x11.url or base64.b64decode('5YWN6LS55Lqn5ZOB5bey57uP5biu5oKo57ut5pyf').decode() in _0x11.text
