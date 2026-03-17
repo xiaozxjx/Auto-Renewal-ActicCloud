@@ -6,7 +6,9 @@ import random
 import os
 from datetime import datetime, timedelta
 import base64
+import urllib3
 
+urllib3.disable_warnings()
 def _0x1a2b():
     if os.environ.get('CONFIG'):
         return json.loads(os.environ.get('CONFIG'))
@@ -42,7 +44,7 @@ def _0x1k2l(message):
         pass
 
 def _0x3m4n():
-    _0x7g8h.get(f"{_0x5e6f}{base64.b64decode('L2luZGV4L2xvZ2luLz9yZWZlcmVyPQ==').decode()}", timeout=10)
+    _0x7g8h.get(f"{_0x5e6f}{base64.b64decode('L2luZGV4L2xvZ2luLz9yZWZlcmVyPQ==').decode()}", timeout=10, verify=False)
     _0xc = _0x7g8h.post(
         f"{_0x5e6f}{base64.b64decode('L2luZGV4L2xvZ2luLz9yZWZlcmVyPQ==').decode()}",
         data={"swapname": _0x3c4d['username'], "swappass": _0x3c4d['password']},
