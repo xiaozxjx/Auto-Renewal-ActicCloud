@@ -2,7 +2,7 @@ name: ArcticCloud Auto Renewal
 
 on:
   schedule:
-    - cron: '37 14 * * *'
+    - cron: '37 14 */2 * *'
   workflow_dispatch:
 
 jobs:
